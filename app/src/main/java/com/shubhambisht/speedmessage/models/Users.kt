@@ -1,0 +1,9 @@
+package com.shubhambisht.speedmessage.models
+
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
+class Users(val uid:String,val username:String,val profileImageURL:String): Parcelable{
+    constructor():this("","","")
+}

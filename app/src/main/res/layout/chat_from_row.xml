@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:layout_marginTop="16dp"
+                                                   android:layout_marginBottom="16dp">
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:id="@+id/textView_from" android:layout_marginTop="16dp"
+            android:maxWidth="240dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/star_fom" android:layout_marginStart="8dp"
+            android:background="@drawable/round_corners" android:textSize="16dp" android:padding="16dp"
+            android:text="this is my from message."/>
+    <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_color="@android:color/black"
+            app:civ_border_width="3dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" app:srcCompat="@android:drawable/star_big_on"
+            android:id="@+id/star_fom"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/textView_from" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView_from"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

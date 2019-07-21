@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "319659438009",
+    "firebase_url": "https://speedmessage-e7af2.firebaseio.com",
+    "project_id": "speedmessage-e7af2",
+    "storage_bucket": "speedmessage-e7af2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319659438009:android:d63e1aa027311269",
+        "android_client_info": {
+          "package_name": "com.shubhambisht.speedmessage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319659438009-omh46g8gkedafk78o1mu47b7iniug4vn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW7GwR-r9_0amB1_4_I3ypDVKNCbHJMZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319659438009-omh46g8gkedafk78o1mu47b7iniug4vn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

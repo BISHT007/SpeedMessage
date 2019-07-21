@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#76FF03"
+        tools:context=".messages.ChatLogActivity">
+
+    <EditText
+            android:layout_width="322dp"
+            android:layout_height="43dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/entermessage_chatlog" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/sendbutton_chatlog" android:background="@drawable/round_corners"
+            app:layout_constraintHorizontal_bias="0.0" android:hint="enter  message" android:textColor="#ED131313"
+            android:textColorHint="#76FF03" android:textSize="24sp" android:paddingLeft="10sp"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview_chatlog" android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+    <Button
+            android:text="fly"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/sendbutton_chatlog"
+            app:layout_constraintTop_toTopOf="@+id/entermessage_chatlog" android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/entermessage_chatlog" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:background="@drawable/round_corners"
+            android:backgroundTint="#255C1A" app:layout_constraintVertical_bias="0.571" android:layout_marginTop="4dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/entermessage_chatlog"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/recyclerview_chatlog"
+            android:background="#76FF03"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
